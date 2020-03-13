@@ -23,9 +23,23 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit the `ANSWERS.md` file to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
 - [ ] Why would you use class component over function components (removing hooks from the question)?
+      removing hooks from the question, class components allow us to have state and initialize a constructor that can pass the state and associated methods down to inherit. Class allows us to paint clearly what is going on in each stage of the render lifecycle
+
 - [ ] Name three lifecycle methods and their purposes.
+
+componentDidMount: runs something (usually an async call or a setState) upon the first mounting of your component after render.
+
+componentDidUpdate: similar to a useEffect hook, runs something during the growth stage after the birth of the component based on conditional changes the state goes through.
+
+componentWillUnmount: called just before a component is unmounted and destroyed, is useful to clean up side effects that are expensive like DOM event listeners.
+
 - [ ] What is the purpose of a custom hook?
+
+custom hooks allow us to reuse stateful logic across all of our components.
+
 - [ ] Why is it important to test our apps?
+
+Testing is important to minimize errors that will snowball during the development phase into the production phase.
 
 ## Project Set Up
 
@@ -44,7 +58,7 @@ Follow these steps to set up and work on your project:
 
 Follow these steps for completing your project:
 
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo).
+- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's Repo).
 - [ ] Add your Project Manager as a Reviewer on the Pull-request.
 - [ ] PM then will count the HW as done by merging the branch back into master.
 
